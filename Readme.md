@@ -4,16 +4,16 @@
 
 [Queue](https://github.com/guerlak/algoritmos_estrutura-de-dados_js/blob/master/estrutura-de-dados/queues/Queue.js)
 
-Coleção ordenada de itens que obedece ao princípio FIFO (First In First Out)
+Coleção ordenada de itens que obedece ao princípio FIFO (First In First Out) primeiro a entrar é o primeiro a sair.
 
 [Deque](https://github.com/guerlak/algoritmos_estrutura-de-dados_js/tree/master/estrutura-de-dados/deques)
 
-Conhecida como Fila (Queue) de ponta duplas e pode-se inserir e remover elementos do final ou no começo da fila.
+Conhecida como Fila (Queue) de ponta duplas e pode-se inserir e remover elementos do final ou do começo da fila.
 
 [Stack](https://github.com/guerlak/algoritmos_estrutura-de-dados_js/tree/master/estrutura-de-dados/stacks)
 
-Coleção ordenada de itens que obedece ao princípio LIFO (Last In First Out)
+Coleção ordenada de itens que obedece ao princípio LIFO (Last In First Out) últim a entrar é o primeiro a sair.
 
 [Linked List](https://github.com/guerlak/algoritmos_estrutura-de-dados_js/blob/master/estrutura-de-dados/linked_lists/LinkedList.js)
 
-Coleção que armazena elementos em sequencial; no entanto, de modo diferente dos arrays, nas Listas Ligadas os elementos não são posicionados de formacontígua na memória. Cada elemento é constituido de um Nó (Node) que armazena o elemento(element) e uma referencia (next) que aponta para o próprio elemento.
+Coleção que armazena elementos em sequencial; no entanto, de modo diferente dos arrays, nas Listas Ligadas os elementos não são posicionados de forma contígua na memória. Cada elemento é constituido de um Nó (Node) que armazena o elemento (element) propriamente dito e uma referencia (next) que aponta para o próprio elemento.
