@@ -11,7 +11,6 @@ class LinkedList {
   push(element) {
     const node = new Node(element);
     let current;
-
     if (this.head == null) {
       this.head = node;
     } else {
@@ -63,22 +62,68 @@ class LinkedList {
         current = current.next;
       }
     }
-    return "No element on this list";
+    return undefined;
   }
 
   indexOf(element) {
     if (this.head === null) {
       return "List Empty";
     }
+    let count = 0;
+    let current = this.head;
+    while (current !== null && current !== undefined) {
+      if (current.element === element) {
+        return count;
+      } else {
+        count++;
+        current = current.next;
+      }
+    }
+    return undefined;
   }
 
-  removeAt(position) {}
+  removeAt(index) {
+    if (index < 0 || index >= this.count) {
+      return undefined;
+    }
 
-  isEmpty() {}
+    let current;
+
+    if (this.count === 1 && index === 0) {
+      current = this.head;
+      this.head = null;
+      this.count--;
+      return current;
+    }
+
+    let previous;
+    current = this.head;
+    if (index === 0) {
+      current.next = this.head;
+    } else {
+      for (let i = 0; i <= index; i++) {
+        if (i === index) {
+          previous.next = current.next;
+          this.count--;
+          return current.element;
+        }
+        previous = current;
+        current = current.next;
+      }
+    }
+  }
+
+  isEmpty() {
+    if (this.count < 1) {
+      return true;
+    }
+    return false;
+  }
 
   size() {
     return this.count;
   }
+
   toString() {}
 }
 
