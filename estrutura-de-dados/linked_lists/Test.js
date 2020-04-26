@@ -3,11 +3,9 @@ const LinkedList = require("./LinkedList");
 const list = new LinkedList();
 
 function test() {
-  list.push(1);
-
-  console.log(list.removeAt(0));
-
-  list.push("Raf");
+  console.log(list.insert("Rafaela", 0));
+  console.log(list.insert("Rafael", 0));
+  console.log(list.insert("Martininha", 1));
 
   // console.log(list.remove(2));
   // console.log(list.indexOf(1));
@@ -15,5 +13,5 @@ function test() {
 }
 
 test();
-
-console.log(list);
+console.log(list.size());
+console.log(list.toString());

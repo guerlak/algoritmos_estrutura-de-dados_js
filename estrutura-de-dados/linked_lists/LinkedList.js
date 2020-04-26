@@ -23,17 +23,35 @@ class LinkedList {
     this.count++;
   }
 
-  insert(element, position) {}
+  insert(element, index) {
+    if (index >= 0 && index <= this.count) {
+      const node = new Node(element);
+      if (index === 0) {
+        const currentNode = this.head;
+        node.next = currentNode;
+        this.head = node;
+      } else {
+        const prevNode = this.getElementByIndex(index - 1);
+
+        const currentNode = prevNode.next;
+        node.next = currentNode;
+        prevNode.next = node;
+      }
+      this.count++;
+      return true;
+    }
+    return false;
+  }
 
   getElementByIndex(index) {
-    if (index > this.count) {
+    if (index >= this.count) {
       return "Out of bounds";
     } else {
-      let current = this.head;
+      let node = this.head;
       for (let i = 0; i < index; i++) {
-        current = current.next;
+        node = node.next;
       }
-      return current.element;
+      return node;
     }
   }
 
@@ -114,17 +132,27 @@ class LinkedList {
   }
 
   isEmpty() {
-    if (this.count < 1) {
-      return true;
-    }
-    return false;
+    return this.size() == 0;
   }
 
   size() {
     return this.count;
   }
 
-  toString() {}
+  toString() {
+    if (this.isEmpty()) {
+      return "";
+    }
+    //iniciar a variavel objStr com valor p/ não devolver str vazia
+    let currentNode = `${this.head.element}`;
+    let nextNode = this.head.next;
+
+    for (let i = 0; i <= this.count && nextNode !== null; i++) {
+      currentNode = `${currentNode},${nextNode.element}`;
+      nextNode = nextNode.next;
+    }
+    return currentNode;
+  }
 }
 
 module.exports = LinkedList;
