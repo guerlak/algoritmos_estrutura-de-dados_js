@@ -1,4 +1,4 @@
-const Set = require("./Set");
+import Set from "./Set.js";
 const set = new Set();
 set.add("Rafa");
 set.add("Rafa");

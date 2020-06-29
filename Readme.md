@@ -21,3 +21,5 @@ Coleção que armazena elementos em sequencial; no entanto, de modo diferente do
 [Sets](https://github.com/guerlak/algoritmos_estrutura-de-dados_js/blob/master/estrutura-de-dados/sets/Set.js)
 
 Coleção não ordenada de itens e composta de elementos únicos (que não podem ser repetidos).
+
+Referência técnica do excelente livro de _Loilane Groner_ - **Estruturas de dados e algoritmos em javascript**
