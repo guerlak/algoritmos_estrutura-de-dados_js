@@ -17,3 +17,7 @@ Coleção ordenada de itens que obedece ao princípio LIFO (Last In First Out) �
 [Linked List](https://github.com/guerlak/algoritmos_estrutura-de-dados_js/blob/master/estrutura-de-dados/linked_lists/LinkedList.js)
 
 Coleção que armazena elementos em sequencial; no entanto, de modo diferente dos arrays, nas Listas Ligadas os elementos não são posicionados de forma contígua na memória. Cada elemento é constituido de um Nó (Node) que armazena o elemento (element) propriamente dito e uma referencia (next) que aponta para o próprio elemento.
+
+[Sets](https://github.com/guerlak/algoritmos_estrutura-de-dados_js/blob/master/estrutura-de-dados/sets/Sets.js)
+
+Coleção não ordenada de itens e composta de elementos únicos (que não podem ser repetidos).
