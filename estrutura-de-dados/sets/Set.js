@@ -35,6 +35,13 @@ class Set {
   values() {
     return Object.values(this.items);
   }
+
+  union(otherSet) {
+    const unionSet = new Set();
+    this.values().forEach((value) => unionSet.add(value));
+    otherSet.values().forEach((value) => unionSet.add(value));
+    return unionSet;
+  }
 }
 
 export default Set;

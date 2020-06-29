@@ -22,4 +22,4 @@ Coleção que armazena elementos em sequencial; no entanto, de modo diferente do
 
 Coleção não ordenada de itens e composta de elementos únicos (que não podem ser repetidos).
 
-:arrow_right: Referência técnica do excelente livro de \_Loiane Groner\* - **Estruturas de dados e algoritmos em javascript**
+:arrow_right: Referência técnica do excelente livro de _Loiane Groner_ - **Estruturas de dados e algoritmos em javascript**
